@@ -2,7 +2,9 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#2F4A37">
+<meta name="format-detection" content="telephone=yes">
 <title>齊有綠豆沙｜新竹 42 年古法・純天然綿密冰沙</title>
 <meta name="description" content="齊有綠豆沙 — 新竹42年古法綠豆沙，純天然、綿密、RO純水。冰沙、鮮奶、嫩仙草、燒仙草、冬瓜茶、手作冰淇淋。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,8 +15,9 @@
 --cream:#F6F1E6; --paper:#FFFCF3; --ink:#2E332D; --muted:#8A867D;
 --green:#5C7E5B; --deep:#2F4A37; --bean:#8DB48E; --orange:#E89B3D; --pink:#F4CFC0; --line:#E5DCC8;
 }
-html{scroll-behavior:smooth}
-body{background:var(--cream);color:var(--ink);font-family:"Noto Sans TC",sans-serif;overflow-x:hidden}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--cream);color:var(--ink);font-family:"Noto Sans TC",sans-serif;overflow-x:hidden;font-size:16px;line-height:1.8;-webkit-tap-highlight-color:transparent}
+img{max-width:100%}
 body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.5;
 background-image:radial-gradient(#d8d0ba 1px, transparent 1px);background-size:22px 22px;}
 .serif{font-family:"Noto Serif TC",serif}
@@ -43,7 +46,7 @@ h1{font-family:"Noto Serif TC";font-size:clamp(48px,8vw,88px);line-height:.95;ma
 h1 span{position:relative;display:inline-block}
 h1 span::after{content:"";position:absolute;left:0;right:0;bottom:8px;height:18px;background:#DDEBD8;z-index:-1;transform:rotate(-1deg)}
 .sub{font-size:clamp(16px,2.4vw,20px);color:#4A544A;line-height:1.8}
-.keywords{display:flex flex-wrap:wrap;display:flex;gap:10px;margin:18px 0;flex-wrap:wrap}
+.keywords{display:flex;gap:10px;margin:18px 0;flex-wrap:wrap}
 .kw{border:1.5px solid var(--ink);border-radius:100px;padding:6px 14px;background:var(--paper);font-size:13px;font-weight:700}
 .kw:nth-child(1){background:#FFF2C9}.kw:nth-child(2){background:#DDEBD8}.kw:nth-child(3){background:#D6EAF8}
 .hero-card{background:var(--paper);border:2px solid var(--ink);border-radius:28px;padding:22px;box-shadow:8px 8px 0 var(--ink);position:relative;overflow:hidden}
@@ -135,6 +138,69 @@ footer{margin:50px 0 30px;text-align:center;color:#7A756A;font-size:13px;line-he
 .gallery figure:hover img{transform:scale(1.06)}
 .gallery figcaption{font-size:12px;padding:8px 10px;line-height:1.6;color:#4A544A}
 .credit{font-size:12px;color:#7A756A;margin-top:10px;line-height:1.8}
+/* ===== 手機好讀版 Mobile-first ===== */
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
+.mobile-bar{display:none}
+@media(max-width:760px){
+  .wrap{padding:0 16px}
+  nav{top:8px;margin:8px 10px}
+  .nav-in{padding:8px 8px 8px 14px;border-radius:22px}
+  .logo{font-size:15px}
+  .logo-mark{width:32px;height:32px;font-size:17px}
+  .nav-links a{font-size:15px;padding:10px 12px;min-height:44px;display:inline-flex;align-items:center}
+  .nav-in .btn{padding:10px 16px;min-height:44px;font-size:15px}
+  .hero{padding:22px 0 6px}
+  h1{font-size:clamp(44px,14vw,64px);line-height:1.02;margin:14px 0 8px}
+  h1 span::after{bottom:5px;height:13px}
+  .badge{font-size:12px;letter-spacing:.06em;padding:7px 12px;line-height:1.5;white-space:normal}
+  .sub{font-size:16px;line-height:1.9}
+  .kw{font-size:14px;padding:8px 14px}
+  .btn{min-height:48px;font-size:16px;justify-content:center}
+  .hero-cta{flex-direction:column;align-items:stretch}
+  .hero-cta .btn{width:100%}
+  .hero-grid{gap:18px}
+  .hero-card{padding:14px;border-radius:22px;box-shadow:5px 5px 0 var(--ink)}
+  .hero-photo{height:min(60vw,280px);min-height:200px;border-radius:16px}
+  .hero-thumbs .img{height:72px}
+  .hero-thumbs figcaption{font-size:12px;line-height:1.5}
+  section{padding:40px 0 6px;scroll-margin-top:80px}
+  .sec-head{flex-direction:column;align-items:flex-start;gap:8px}
+  .sec-title{font-size:26px;line-height:1.35}
+  .sec-desc{font-size:15px;line-height:1.9}
+  .story-card,.ig-card,.info{padding:18px}
+  .story-card p{font-size:15px;line-height:1.95}
+  .num{font-size:46px}
+  .tabs{flex-wrap:nowrap;overflow-x:auto;padding:4px 2px 12px;margin:6px -16px 12px;padding-left:16px;padding-right:16px;scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{flex:0 0 auto;min-height:44px;font-size:15px;padding:11px 18px}
+  ul.items li{padding:14px 10px;align-items:flex-start}
+  .item-name{font-size:16px;line-height:1.6}
+  .item-en{font-size:12px;margin-top:2px}
+  .item-price{font-size:18px}
+  .note{font-size:14px;line-height:1.9}
+  .check{font-size:15px;line-height:1.9}
+  .info{font-size:15px;line-height:2;word-break:break-word}
+  .info a{word-break:break-all}
+  .visit div[style*="display:flex"] .btn{flex:1 1 100%}
+  .float{display:none}
+  body{padding-bottom:72px}
+  footer{margin:36px 0 90px;font-size:12px;padding:0 8px}
+  .mobile-bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:70;background:rgba(255,252,243,.96);backdrop-filter:blur(12px);border-top:2px solid var(--ink);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px}
+  .mobile-bar a{flex:1;min-height:50px;display:flex;align-items:center;justify-content:center;border-radius:100px;font-weight:800;font-size:16px;text-decoration:none;border:2px solid var(--ink)}
+  .mobile-bar .call{background:var(--green);color:#fff;box-shadow:3px 3px 0 var(--ink)}
+  .mobile-bar .map{background:#fff;color:var(--ink);box-shadow:3px 3px 0 var(--ink)}
+}
+@media(max-width:640px){
+  .rec-grid{grid-template-columns:1fr}
+  .rec-top{height:200px}
+  .rec-body h4{font-size:18px}
+  .rec-body p{font-size:14px;line-height:1.8}
+  .gallery .gimg{height:120px}
+  .gallery figcaption{font-size:12px}
+}
+@media(min-width:761px){
+  .mobile-bar{display:none}
+}
 </style>
 </head>
 <body>
@@ -146,7 +212,7 @@ footer{margin:50px 0 30px;text-align:center;color:#7A756A;font-size:13px;line-he
 <a class="hide-m" href="#rec">必喝</a>
 <a href="#menu">菜單</a>
 <a class="hide-m" href="#visit">來店</a>
-<a href="#menu" class="btn" style="padding:8px 16px">點一杯清涼 →</a>
+<a href="tel:0928086811" class="btn" style="padding:8px 16px">📞 訂一杯</a>
 </div>
 </div></nav>
 
@@ -162,7 +228,7 @@ footer{margin:50px 0 30px;text-align:center;color:#7A756A;font-size:13px;line-he
 <div class="kw">❄️ 現打綿密冰沙</div>
 <div class="kw">📸 好拍好喝</div>
 </div>
-<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:6px">
+<div class="hero-cta">
 <a href="#menu" class="btn green">看完整菜單・價目表</a>
 <a href="#visit" class="btn">怎麼去・營業資訊</a>
 </div>
@@ -334,6 +400,8 @@ footer{margin:50px 0 30px;text-align:center;color:#7A756A;font-size:13px;line-he
 </div>
 
 <div class="float"><a href="#menu" title="菜單">🧾</a><a href="#visit" title="來店">📍</a></div>
+
+<div class="mobile-bar"><a class="call" href="tel:0928086811">📞 打電話訂</a><a class="map" href="https://www.google.com/maps/search/?api=1&query=新竹市北區光華東街94號 齊有綠豆沙" target="_blank">📍 導航來店</a></div>
 
 <script>
 document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{
