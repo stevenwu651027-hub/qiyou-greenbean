@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>齊有綠豆沙｜新竹 42 年古法・純天然綿密冰沙</title>
+<meta name="description" content="齊有綠豆沙 — 新竹42年古法綠豆沙，純天然、綿密、RO純水。冰沙、鮮奶、嫩仙草、燒仙草、冬瓜茶、手作冰淇淋。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;900&family=Noto+Sans+TC:wght@300;400;500;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--cream:#F6F1E6; --paper:#FFFCF3; --ink:#2E332D; --muted:#8A867D;
+--green:#5C7E5B; --deep:#2F4A37; --bean:#8DB48E; --orange:#E89B3D; --pink:#F4CFC0; --line:#E5DCC8;
+}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:"Noto Sans TC",sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.5;
+background-image:radial-gradient(#d8d0ba 1px, transparent 1px);background-size:22px 22px;}
+.serif{font-family:"Noto Serif TC",serif}
+.hand{font-family:"Caveat",cursive}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px;position:relative;z-index:1}
+/* NAV */
+nav{position:sticky;top:12px;z-index:50;margin:12px auto;max-width:1080px}
+.nav-in{background:rgba(255,252,243,.92);backdrop-filter:blur(12px);border:1.5px solid var(--ink);border-radius:100px;display:flex;align-items:center;justify-content:space-between;padding:10px 10px 10px 20px;box-shadow:4px 4px 0 var(--ink)}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.05em}
+.logo-mark{width:36px;height:36px;background:var(--deep);color:#fff;border-radius:50%;display:grid;place-items:center;font-family:"Noto Serif TC";font-size:19px}
+.nav-links{display:flex;gap:4px;align-items:center}
+.nav-links a{text-decoration:none;color:var(--ink);font-size:14px;font-weight:500;padding:8px 14px;border-radius:100px}
+.nav-links a:hover{background:var(--ink);color:#fff}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--orange);border:1.5px solid var(--ink);border-radius:100px;padding:10px 20px;font-weight:700;color:var(--ink);text-decoration:none;box-shadow:3px 3px 0 var(--ink);transition:.2s}
+.btn:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink)}
+.btn.green{background:var(--green);color:#fff}
+@media(max-width:760px){.nav-links a.hide-m{display:none}}
+/* HERO */
+.hero{padding:38px 0 10px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:stretch}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr}}
+.badge{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--ink);border-radius:100px;background:#fff;padding:7px 14px;font-size:13px;letter-spacing:.12em;font-weight:700}
+.badge i{width:8px;height:8px;background:#6CB46C;border-radius:50%;display:inline-block;animation:blink 1.6s infinite}
+@keyframes blink{50%{opacity:.3}}
+h1{font-family:"Noto Serif TC";font-size:clamp(48px,8vw,88px);line-height:.95;margin:18px 0 6px;letter-spacing:.02em}
+h1 span{position:relative;display:inline-block}
+h1 span::after{content:"";position:absolute;left:0;right:0;bottom:8px;height:18px;background:#DDEBD8;z-index:-1;transform:rotate(-1deg)}
+.sub{font-size:clamp(16px,2.4vw,20px);color:#4A544A;line-height:1.8}
+.keywords{display:flex flex-wrap:wrap;display:flex;gap:10px;margin:18px 0;flex-wrap:wrap}
+.kw{border:1.5px solid var(--ink);border-radius:100px;padding:6px 14px;background:var(--paper);font-size:13px;font-weight:700}
+.kw:nth-child(1){background:#FFF2C9}.kw:nth-child(2){background:#DDEBD8}.kw:nth-child(3){background:#D6EAF8}
+.hero-card{background:var(--paper);border:2px solid var(--ink);border-radius:28px;padding:22px;box-shadow:8px 8px 0 var(--ink);position:relative;overflow:hidden}
+.hero-card::after{content:"冰";position:absolute;right:-10px;bottom:-28px;font-family:"Noto Serif TC";font-size:160px;opacity:.07;font-weight:900}
+.cup-visual{background:linear-gradient(180deg,#5C7E5B 0%, #8DB48E 55%, #F6F1E6 55%, #FFFCF3 100%);border:2px solid var(--ink);border-radius:22px 22px 28px 28px;padding:18px;text-align:center;position:relative}
+.cup{font-size:92px;filter:drop-shadow(0 8px 0 rgba(0,0,0,.12))}
+.stars{color:var(--orange);letter-spacing:2px;font-size:15px}
+.price-tag{position:absolute;top:12px;right:12px;background:var(--ink);color:#fff;border-radius:100px;padding:6px 12px;font-size:13px;font-weight:700;transform:rotate(6deg)}
+.marquee{margin:22px 0;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);background:var(--deep);color:#FFF8E6;overflow:hidden;white-space:nowrap;padding:10px 0;font-weight:700;letter-spacing:.15em}
+.marquee span{display:inline-block;padding:0 18px;animation:slide 18s linear infinite}
+@keyframes slide{to{transform:translateX(-50%)}}
+/* SECTION */
+section{padding:56px 0 8px}
+.sec-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:20px}
+.sec-no{font-family:"Caveat";font-size:28px;color:var(--green)}
+.sec-title{font-family:"Noto Serif TC";font-size:clamp(28px,4.5vw,42px);font-weight:900}
+.sec-desc{color:#5D665D;max-width:520px;line-height:1.8;font-size:15px}
+/* STORY */
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:800px){.story-grid{grid-template-columns:1fr}}
+.story-card{background:var(--paper);border:1.8px solid var(--ink);border-radius:20px;padding:24px;box-shadow:5px 5px 0 var(--ink)}
+.story-card h3{font-family:"Noto Serif TC";font-size:20px;margin-bottom:10px}
+.story-card p{line-height:1.9;color:#4A544A;font-size:15px}
+.num{font-family:"Noto Serif TC";font-size:56px;font-weight:900;line-height:1;color:var(--deep)}
+/* RECOMMEND */
+.rec-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media(max-width:900px){.rec-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.rec-grid{grid-template-columns:1fr}}
+.rec{background:#fff;border:1.8px solid var(--ink);border-radius:20px;overflow:hidden;box-shadow:5px 5px 0 var(--ink);transition:.2s}
+.rec:hover{transform:translateY(-4px)}
+.rec-top{height:132px;display:grid;place-items:center;font-size:64px;position:relative}
+.rec-top small{position:absolute;top:10px;left:10px;background:#fff;border:1.5px solid var(--ink);border-radius:100px;padding:3px 10px;font-size:12px;font-weight:800}
+.rec-body{padding:16px}
+.rec-body h4{font-family:"Noto Serif TC";font-size:18px}
+.rec-body p{font-size:13px;color:#6B756B;line-height:1.7;margin:6px 0 10px}
+.rec-price{display:flex;align-items:center;justify-content:space-between;font-weight:900}
+.rec-price b{font-size:20px}
+.tag{font-size:12px;background:#FFF2C9;border:1px solid var(--ink);border-radius:100px;padding:2px 8px}
+/* MENU */
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 18px}
+.tab{border:1.5px solid var(--ink);border-radius:100px;padding:8px 18px;background:#fff;cursor:pointer;font-weight:700;font-size:14px}
+.tab.active{background:var(--ink);color:#fff}
+.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:800px){.menu-grid{grid-template-columns:1fr}}
+.menu-card{background:var(--paper);border:2px solid var(--ink);border-radius:22px;overflow:hidden;box-shadow:6px 6px 0 var(--ink)}
+.menu-head{padding:14px 20px;color:#fff;font-weight:900;letter-spacing:.1em;display:flex;justify-content:space-between;align-items:center;font-size:17px}
+.menu-head span{font-size:12px;opacity:.9;letter-spacing:.05em;font-weight:400}
+.m1{background:#E67E22}.m2{background:#2F6F59}.m3{background:#6B4A2F}.m4{background:#4A6FA5}.m5{background:#7A4E57}.m6{background:#B78A2E}
+ul.items{list-style:none;padding:8px 10px 14px}
+ul.items li{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 12px;border-bottom:1.5px dashed var(--line)}
+ul.items li:last-child{border:none}
+.item-name{font-weight:700;font-size:15px}
+.item-name em{font-style:normal;font-size:12px;background:#FFF2C9;border:1px solid var(--ink);border-radius:6px;padding:1px 6px;margin-left:6px}
+.item-en{font-size:12px;color:var(--muted)}
+.item-price{font-weight:900;white-space:nowrap}
+.item-price small{font-weight:500;color:var(--muted)}
+.crown{color:#D99400}
+/* WINTER NOTE */
+.note{background:#2F4A37;color:#EFE9D7;border:2px solid var(--ink);border-radius:18px;padding:18px 20px;line-height:1.8;font-size:14px;box-shadow:5px 5px 0 var(--ink)}
+/* IG */
+.ig-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}
+@media(max-width:800px){.ig-grid{grid-template-columns:1fr}}
+.ig-card{background:#fff;border:1.8px solid var(--ink);border-radius:20px;padding:22px;box-shadow:5px 5px 0 var(--ink)}
+.check{display:flex;gap:10px;align-items:flex-start;background:#F9F5E9;border:1.5px dashed var(--ink);border-radius:14px;padding:12px 14px;margin:10px 0;font-size:14px;line-height:1.7}
+/* VISIT */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
+@media(max-width:800px){.visit{grid-template-columns:1fr}}
+.info{background:var(--paper);border:2px solid var(--ink);border-radius:22px;padding:24px;box-shadow:6px 6px 0 var(--ink);line-height:2}
+.info b{background:#DDEBD8;padding:2px 8px;border-radius:8px}
+footer{margin:50px 0 30px;text-align:center;color:#7A756A;font-size:13px;line-height:2}
+.float{position:fixed;right:16px;bottom:16px;z-index:60;display:flex;flex-direction:column;gap:10px}
+.float a{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink);text-decoration:none;font-size:24px;background:#fff}
+.reveal{opacity:0;transform:translateY(18px);transition:.6s}
+.reveal.on{opacity:1;transform:none}
+.photo{width:100%;height:100%;object-fit:cover;display:block}
+.hero-photo{height:300px;border:2px solid var(--ink);border-radius:20px;overflow:hidden;position:relative;background:#ddd}
+.hero-photo .price-tag{position:absolute;top:12px;right:12px;background:var(--ink);color:#fff;border-radius:100px;padding:6px 12px;font-size:13px;font-weight:700;transform:rotate(6deg);z-index:2}
+.hero-thumbs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:12px}
+.hero-thumbs figure{border:1.5px solid var(--ink);border-radius:14px;overflow:hidden;background:#fff}
+.hero-thumbs .img{height:86px}
+.hero-thumbs figcaption{font-size:12px;font-weight:700;padding:7px 4px;text-align:center}
+.rec-top{height:150px;padding:0}
+.rec-top img{width:100%;height:100%;object-fit:cover}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media(max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}}
+.gallery figure{background:#fff;border:1.8px solid var(--ink);border-radius:16px;overflow:hidden;box-shadow:4px 4px 0 var(--ink)}
+.gallery .gimg{height:150px;overflow:hidden}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:.3s}
+.gallery figure:hover img{transform:scale(1.06)}
+.gallery figcaption{font-size:12px;padding:8px 10px;line-height:1.6;color:#4A544A}
+.credit{font-size:12px;color:#7A756A;margin-top:10px;line-height:1.8}
+</style>
+</head>
+<body>
+
+<nav><div class="nav-in">
+<div class="logo"><div class="logo-mark">齊</div><div>齊有綠豆沙 <span style="font-weight:400;font-size:12px;letter-spacing:.2em">QI YOU</span></div></div>
+<div class="nav-links">
+<a class="hide-m" href="#story">故事</a>
+<a class="hide-m" href="#rec">必喝</a>
+<a href="#menu">菜單</a>
+<a class="hide-m" href="#visit">來店</a>
+<a href="#menu" class="btn" style="padding:8px 16px">點一杯清涼 →</a>
+</div>
+</div></nav>
+
+<div class="wrap hero">
+<div class="hero-grid">
+<div>
+<div class="badge"><i></i> 新竹在地・42年古法・SHARELIFE 報導推薦</div>
+<h1 class="serif">齊有<br><span>綠豆沙</span></h1>
+<p class="sub serif" style="margin-top:8px">～純天然、綿密、RO純水～<br>一杯喝得到綠豆香的古早味冰沙。</p>
+<p class="sub" style="font-size:15px;margin-top:10px">舌尖上的新竹！細膩到會起沙、綿到像冰淇淋。<br>年輕人最愛的文青系消暑所，夏天冬天都有理由來。</p>
+<div class="keywords">
+<div class="kw">🌿 無香料・真材實料</div>
+<div class="kw">❄️ 現打綿密冰沙</div>
+<div class="kw">📸 好拍好喝</div>
+</div>
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:6px">
+<a href="#menu" class="btn green">看完整菜單・價目表</a>
+<a href="#visit" class="btn">怎麼去・營業資訊</a>
+</div>
+<p style="margin-top:14px;font-size:13px;color:#7A756A">👑 = 人氣招牌・價格皆參照店內價目表 (附檔)・中 / 大 任你選</p>
+</div>
+
+<div class="hero-card">
+<div class="hero-photo">
+<div class="price-tag">中 $45 起</div>
+<img class="photo" src="https://taiwan.sharelife.tw/tw-feat-store-img/333801/7022030523040716.jpg" alt="齊有綠豆沙 台灣旅行趣報導首圖" loading="eager">
+</div>
+<div style="text-align:center;padding:14px 6px 2px">
+<div class="stars">★★★★★ 4.8 古早味回憶殺</div>
+<div class="serif" style="font-size:22px;font-weight:900;margin-top:6px">綠豆冰沙鮮奶・嫩仙草凍飲・冬瓜茶</div>
+<div style="font-size:13px;color:#2F4A37;margin-top:4px">綠豆 + 仙草 + 冬瓜・三種古早味一次滿足</div>
+<div class="credit">📷 首圖取自 ShareLife 台灣旅行趣報導</div>
+</div>
+<div class="hero-thumbs">
+<figure><div class="img"><img class="photo" src="https://disk.sharelife.tw/gallery/333801-179650/7125040523535211.jpg" alt="台灣旅行趣實拍 綠豆沙" loading="lazy"></div><figcaption>當日現煮<br>綠豆沙</figcaption></figure>
+<figure><div class="img"><img class="photo" src="https://disk.sharelife.tw/gallery/63234-179832/b637050523381715.jpg" alt="台灣旅行趣實拍 嫩仙草" loading="lazy"></div><figcaption>手洗嫩仙草<br>滑嫩咕溜</figcaption></figure>
+<figure><div class="img"><img class="photo" src="https://disk.sharelife.tw/gallery/63234-179833/f873050523381715.jpg" alt="台灣旅行趣實拍 冰品" loading="lazy"></div><figcaption>盛夏冰品<br>清爽解膩</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+
+<div class="marquee"><div style="display:inline-block" id="mq">
+<span>42年古法綠豆沙 ✦ 純天然 ✦ 綿密口感 ✦ RO純水製作 ✦ 嫩仙草 ✦ 燒仙草(10-3月) ✦ 冬瓜茶 ✦ 手作冰淇淋 ✦&nbsp;</span><span>42年古法綠豆沙 ✦ 純天然 ✦ 綿密口感 ✦ RO純水製作 ✦ 嫩仙草 ✦ 燒仙草(10-3月) ✦ 冬瓜茶 ✦ 手作冰淇淋 ✦&nbsp;</span>
+</div></div>
+
+<div class="wrap">
+<section id="story">
+<div class="sec-head"><div><div class="sec-no">01 — our story</div><div class="sec-title">阿公時代的味道，<br>我們用文青的方式留下來。</div></div><div class="sec-desc">ShareLife 台灣旅行趣報導：「舌尖上的新竹！42年古法綠豆沙，細膩口感驚艷味蕾！」不加香料、不偷工，綠豆慢慢熬、冰沙細細打，才有那一口沙沙綿綿。</div></div>
+<div class="story-grid">
+<div class="story-card reveal"><div class="num">42<span style="font-size:18px">年</span></div><h3>古法，就是不趕時間</h3><p>綠豆去殼、慢火熬煮、急速冷凍再細打。沒有化學香料，只有豆香 + 糖香 + RO純水的乾淨甜。老客人說：這是小時候福利社門口的味道。</p></div>
+<div class="story-card reveal"><h3>🍧 為什麼年輕人都愛來？</h3><p>① 好拍：奶白漸層 + 墨黑仙草，隨手拍都是底片感。<br>② 好喝：鮮奶系濃郁不死甜、冬瓜系清爽解渴。<br>③ 好親切：最便宜 $30 就有手作冰淇淋，學生也無負擔。<br><br><span class="hand" style="font-size:22px;color:var(--green)">“夏天喝冰沙，冬天喝燒仙草，一年四季都有藉口見面。”</span></p></div>
+</div>
+</section>
+
+<section id="rec">
+<div class="sec-head"><div><div class="sec-no">02 — must drink</div><div class="sec-title">第一次來？先喝這四杯。</div></div><div class="sec-desc">👑 是店內價目表上掛皇冠的人氣王，也是回購率最高的組合。</div></div>
+<div class="rec-grid">
+<div class="rec reveal"><div class="rec-top"><img src="https://disk.sharelife.tw/gallery/333801-179640/6e99040523535011.jpg" alt="綠豆冰沙鮮奶 實拍" loading="lazy"><small>👑 招牌 NO.1</small></div><div class="rec-body"><h4>綠豆冰沙鮮奶</h4><p>綿密綠豆沙 + 鮮奶，奶香豆香完美融合。IG 打卡率最高！</p><div class="rec-price"><span class="tag">中 / 大</span><b>$55 / $65</b></div></div></div>
+<div class="rec reveal"><div class="rec-top"><img src="https://disk.sharelife.tw/gallery/63234-179831/5a04050523381715.jpg" alt="酸梅冰沙 實拍" loading="lazy"><small>👑 清爽系</small></div><div class="rec-body"><h4>酸梅冰沙</h4><p>酸甘甜醒腦，古早味冰店才喝得到的懷舊酸梅香。</p><div class="rec-price"><span class="tag">中 / 大</span><b>$50 / $60</b></div></div></div>
+<div class="rec reveal"><div class="rec-top"><img src="https://disk.sharelife.tw/gallery/63234-179830/5c69050523371715.jpg" alt="嫩仙草綠豆沙鮮奶 實拍" loading="lazy"><small>👑 咀嚼控</small></div><div class="rec-body"><h4>嫩仙草綠豆沙鮮奶</h4><p>滑嫩仙草 + 綠豆沙鮮奶，一杯就有三種口感。</p><div class="rec-price"><span class="tag">中 / 大</span><b>$60 / $70</b></div></div></div>
+<div class="rec reveal"><div class="rec-top"><img src="https://disk.sharelife.tw/gallery/63234-179829/9729050523371715.jpg" alt="綠豆冰沙 實拍" loading="lazy"><small>👑 經典原味</small></div><div class="rec-body"><h4>綠豆冰沙</h4><p>最純粹的古法味。不加奶也好喝，豆香濃到會起沙。</p><div class="rec-price"><span class="tag">中 / 大</span><b>$45 / $55</b></div></div></div>
+</div>
+<p class="credit">📷 以上餐點照取自 ShareLife 台灣旅行趣 article_aid-25823 報導實拍，僅作店家形象示意，實際以現場為準。</p>
+</section>
+
+<section id="gallery">
+<div class="sec-head"><div><div class="sec-no">03 — real photos</div><div class="sec-title">台灣旅行趣・報導實拍。</div></div><div class="sec-desc">這 8 張都是該篇報導的真實照片：綠豆現煮、細打冰沙、嫩仙草、店內冰品。文青濾鏡都不用開就很好拍。</div></div>
+<div class="gallery">
+<figure class="reveal"><div class="gimg"><img src="https://taiwan.sharelife.tw/tw-feat-store-img/333801/7022030523040716.jpg" alt="報導封面" loading="lazy"></div><figcaption>報導封面・42年古法綠豆沙</figcaption></figure>
+<figure class="reveal"><div class="gimg"><img src="https://disk.sharelife.tw/gallery/333801-179650/7125040523535211.jpg" alt="綠豆沙實拍1" loading="lazy"></div><figcaption>當日綠豆・慢火熬煮</figcaption></figure>
+<figure class="reveal"><div class="gimg"><img src="https://disk.sharelife.tw/gallery/333801-179640/6e99040523535011.jpg" alt="綠豆冰沙實拍" loading="lazy"></div><figcaption>綠豆冰沙・綿密起沙</figcaption></figure>
+<figure class="reveal"><div class="gimg"><img src="https://disk.sharelife.tw/gallery/63234-179832/b637050523381715.jpg" alt="嫩仙草實拍" loading="lazy"></div><figcaption>嫩仙草・滑嫩咕溜</figcaption></figure>
+<figure class="reveal"><div class="gimg"><img src="https://disk.sharelife.tw/gallery/63234-179833/f873050523381715.jpg" alt="酸梅冰沙實拍" loading="lazy"></div><figcaption>古早味冰沙・酸甜清爽</figcaption></figure>
+<figure class="reveal"><div class="gimg"><img src="https://disk.sharelife.tw/gallery/63234-179831/5a04050523381715.jpg" alt="配料實拍" loading="lazy"></div><figcaption>真材實料・配料滿滿</figcaption></figure>
+<figure class="reveal"><div class="gimg"><img src="https://disk.sharelife.tw/gallery/63234-179830/5c69050523371715.jpg" alt="製作實拍" loading="lazy"></div><figcaption>RO純水・乾淨清甜</figcaption></figure>
+<figure class="reveal"><div class="gimg"><img src="https://disk.sharelife.tw/gallery/63234-179829/9729050523371715.jpg" alt="店家實拍" loading="lazy"></div><figcaption>在地老店・人情味滿滿</figcaption></figure>
+</div>
+<p class="credit">📷 照片來源：ShareLife 台灣旅行趣〈舌尖上的新竹！42年古法綠豆沙〉(article_aid-25823)・<a href="https://taiwan.sharelife.tw/article_aid-25823.html" target="_blank">看原文報導 →</a></p>
+</section>
+
+<section id="menu">
+<div class="sec-head"><div><div class="sec-no">04 — menu</div><div class="sec-title">完整菜單・照著點不會錯。</div></div><div class="sec-desc">價錢全部參照店內價目表附檔。點按鈕可切換分類，夏天喝冰、冬天喝燒仙草。</div></div>
+<div class="tabs">
+<button class="tab active" data-f="all">全部</button>
+<button class="tab" data-f="ice">❄️ 冰沙</button>
+<button class="tab" data-f="retro">🍧 古早味清冰</button>
+<button class="tab" data-f="grass">🍮 嫩仙草・燒仙草</button>
+<button class="tab" data-f="wintermelon">🍵 冬瓜茶</button>
+<button class="tab" data-f="icecream">🍨 手作冰淇淋</button>
+</div>
+
+<div class="menu-grid">
+<div class="menu-card reveal" data-c="ice"><div class="menu-head m2">冰沙 ICE <span>中 / 大</span></div>
+<ul class="items">
+<li><div><div class="item-name"><span class="crown">👑</span> 綠豆冰沙</div><div class="item-en">Mung Bean Slush</div></div><div class="item-price">45 <small>/ 55</small></div></li>
+<li><div><div class="item-name">綠豆冰沙鮮奶 <em>最推</em></div><div class="item-en">with Fresh Milk</div></div><div class="item-price">55 <small>/ 65</small></div></li>
+<li><div><div class="item-name"><span class="crown">👑</span> 酸梅冰沙</div><div class="item-en">Sour Plum Slush</div></div><div class="item-price">50 <small>/ 60</small></div></li>
+<li><div><div class="item-name">多多冰沙</div><div class="item-en">Yakult Slush</div></div><div class="item-price">50</div></li>
+<li><div><div class="item-name">百香果冰沙</div><div class="item-en">Passion Fruit</div></div><div class="item-price">55</div></li>
+<li><div><div class="item-name">檸檬多多冰沙</div><div class="item-en">Lemon Yakult</div></div><div class="item-price">60</div></li>
+</ul></div>
+
+<div class="menu-card reveal" data-c="retro"><div class="menu-head m1">古早味 RETRO <span>清冰・牛奶冰</span></div>
+<ul class="items">
+<li><div><div class="item-name">紅豆牛奶清冰</div><div class="item-en">Red Bean + Milk + Shaved Ice</div></div><div class="item-price">$55</div></li>
+<li><div><div class="item-name">百香果清冰</div><div class="item-en">Passion Fruit Shaved Ice</div></div><div class="item-price">$55</div></li>
+<li><div><div class="item-name">紅豆牛奶花生冰</div><div class="item-en">Red Bean + Peanut + Milk</div></div><div class="item-price">$60</div></li>
+<li><div><div class="item-name"><span class="crown">👑</span> 綠豆沙鮮奶(中) <em>必喝</em></div><div class="item-en">Signature Mung Bean Milk</div></div><div class="item-price">$60</div></li>
+</ul></div>
+
+<div class="menu-card reveal" data-c="grass"><div class="menu-head m5">嫩仙草・燒仙草 <span>滑嫩 / 暖心</span></div>
+<ul class="items">
+<li><div><div class="item-name">嫩仙草凍飲</div><div class="item-en">Grass Jelly Drink</div></div><div class="item-price">45 <small>/ 55</small></div></li>
+<li><div><div class="item-name"><span class="crown">👑</span> 嫩仙草綠豆沙鮮奶</div><div class="item-en">Grass Jelly + Mung Bean Milk</div></div><div class="item-price">60 <small>/ 70</small></div></li>
+<li><div><div class="item-name">燒仙草 (10月–3月限定) <em>冬季</em></div><div class="item-en">Hot Grass Jelly Soup・配料：硬花生 / 紅豆 / 綠豆 / 小芋圓 / 薏仁</div></div><div class="item-price">45 <small>基本 / 加料55 / 全配60</small></div></li>
+</ul></div>
+
+<div class="menu-card reveal" data-c="wintermelon"><div class="menu-head m4">盛夏古早味・冬瓜茶 <span>M / L</span></div>
+<ul class="items">
+<li><div><div class="item-name">冬瓜茶 <em>去冰/少冰</em></div><div class="item-en">Winter Melon Tea</div></div><div class="item-price">L $35</div></li>
+<li><div><div class="item-name">冬瓜檸檬茶</div><div class="item-en">Winter Melon Lemon</div></div><div class="item-price">M $40 <small>/ L $50</small></div></li>
+<li><div><div class="item-name">冬瓜仙草凍 <em>皆去冰</em></div><div class="item-en">with Grass Jelly</div></div><div class="item-price">M $45 <small>/ L $55</small></div></li>
+<li><div><div class="item-name">冬瓜仙草凍奶 <em>最濃郁</em></div><div class="item-en">with Grass Jelly + Milk</div></div><div class="item-price">M $65 <small>/ L $75</small></div></li>
+</ul></div>
+
+<div class="menu-card reveal" data-c="icecream"><div class="menu-head m3">手作冰淇淋 <span>一球 / 兩球・甜筒</span></div>
+<ul class="items">
+<li><div><div class="item-name">巧克力冰淇淋</div><div class="item-en">Handmade Chocolate</div></div><div class="item-price">$30 <small>/ 兩球 $50</small></div></li>
+<li><div><div class="item-name">花生冰淇淋</div><div class="item-en">Handmade Peanut</div></div><div class="item-price">$30 <small>/ 兩球 $50</small></div></li>
+</ul>
+<div class="note" style="margin:0 12px 14px">🍨 小資吃法：兩球 $50 最划算！加在綠豆冰沙上直接升級成「綠豆沙彎豆冰」，古早味 + 冰淇淋的快樂誰懂啊！</div>
+</div>
+
+<div class="menu-card reveal" data-c="all"><div class="menu-head m6">💡 文青點餐攻略 <span>選擇困難看這</span></div>
+<ul class="items">
+<li><div><div class="item-name">解渴派 → 冬瓜檸檬 + 酸梅冰沙</div><div class="item-en">酸甜清爽，騎車來一杯剛好</div></div><div class="item-price">💧</div></li>
+<li><div><div class="item-name">奶香派 → 綠豆沙鮮奶 + 嫩仙草凍奶</div><div class="item-en">濃郁系，拍照漸層最美</div></div><div class="item-price">🥛</div></li>
+<li><div><div class="item-name">咀嚼派 → 燒仙草全配 / 嫩仙草綠豆沙鮮奶</div><div class="item-en">配料：硬花生・紅豆・綠豆・小芋圓・薏仁</div></div><div class="item-price">🍡</div></li>
+</ul></div>
+</div>
+</section>
+
+<section id="ig">
+<div class="sec-head"><div><div class="sec-no">05 — instagrammable</div><div class="sec-title">怎麼拍都文青。</div></div></div>
+<div class="ig-grid">
+<div class="ig-card reveal">
+<h3 class="serif">📸 店內打卡三步驟</h3>
+<div class="check">① <b>舉杯對光拍</b> — 綠豆沙 + 鮮奶漸層，逆光最透最美。 hashtag #齊有綠豆沙 #新竹冰店</div>
+<div class="check">② <b>俯拍價目表</b> — 手寫感價目表 + 復古磁磚，自帶底片濾鏡。</div>
+<div class="check">③ <b>冬瓜茶系列排排站</b> — 琥珀色 + 檸檬片 + 仙草凍，夏天感拉滿。</div>
+<button class="btn" style="margin-top:8px" onclick="navigator.clipboard&&navigator.clipboard.writeText('#齊有綠豆沙 #新竹美食 #古早味冰沙 #42年老店 #文青冰店');alert('已複製 hashtag，去 IG 發文吧！')">一鍵複製 Hashtag</button>
+</div>
+<div class="ig-card reveal" style="background:var(--deep);color:#FFF8E6;border-color:var(--ink)">
+<h3 class="serif">💬 客人怎麼說</h3>
+<p style="margin-top:10px;line-height:2;font-size:14px">“綠豆沙細到像在喝雲，鮮奶一攪下去直接戀愛。” — 新竹女中放學組<br>“酸梅冰沙是阿嬤家冰箱的味道，酸甜剛好。” — 交大消夜組<br>“冬天一定要來吃燒仙草，全配 $60 料多到滿出來。” — 暖心組</p>
+<div class="hand" style="font-size:26px;margin-top:10px;color:#FFD88A">see you at Qi You ~</div>
+</div>
+</div>
+</section>
+
+<section id="visit">
+<div class="sec-head"><div><div class="sec-no">06 — visit us</div><div class="sec-title">來店裡坐坐吧。</div></div><div class="sec-desc">純天然、綿密、RO純水。外帶、內用都歡迎，天熱記得先打電話留一杯綠豆沙。</div></div>
+<div class="visit">
+<div class="info reveal">
+<div>📍 <b>地址</b> 新竹市北區光華東街94號（金華里）</div>
+<div>📞 <b>電話</b> <a href="tel:0928086811">0928-086-811</a></div>
+<div>⏰ <b>營業</b> 11:30 – 20:00・週日公休・燒仙草季 10月–3月</div>
+<div>📰 <b>報導</b> <a href="https://taiwan.sharelife.tw/article_aid-25823.html" target="_blank">ShareLife 台灣旅行趣 — 舌尖上的新竹！42年古法綠豆沙</a></div>
+<div>🥤 <b>招牌</b> 綠豆冰沙 $45起・綠豆沙鮮奶・嫩仙草・冬瓜茶・手作冰淇淋</div>
+<div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap"><a class="btn green" href="tel:0928086811">打電話訂一杯</a><a class="btn" href="https://www.google.com/maps/search/?api=1&query=新竹市北區光華東街94號 齊有綠豆沙" target="_blank">Google 地圖導航</a><a class="btn" href="https://www.facebook.com/profile.php?id=100076006868740" target="_blank">FB粉專</a></div>
+</div>
+<div class="info reveal" style="background:#FFF2C9">
+<div class="serif" style="font-size:20px;font-weight:900">給第一次來的你 ✦</div>
+<div style="font-size:14px;line-height:1.9;margin-top:8px">・綠豆沙 + 鮮奶記得 <b>搖一搖再喝</b>，風味最融合<br>・冬瓜系列 <b>可選去冰 / 少冰</b>，仙草凍奶皆去冰最濃<br>・燒仙草配料有 <b>硬花生 / 紅豆 / 綠豆 / 小芋圓 / 薏仁</b><br>・想嚐鮮？點 <b>紅豆牛奶花生冰 $60</b>，花生香超濃！</div>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="serif" style="font-size:22px;font-weight:900;color:var(--ink)">齊有綠豆沙</div>
+<div>純天然・綿密・RO純水｜冰沙・鮮奶・嫩仙草・燒仙草・冬瓜茶・手作冰淇淋</div>
+<div>本頁菜單價格參照店內價目表附檔整理・報導參考 ShareLife 台灣旅行趣 article_aid-25823<br>© 2026 Qi You Green Bean・文青風店面形象頁・喝一杯，好日子齊有 🫘</div>
+</footer>
+</div>
+
+<div class="float"><a href="#menu" title="菜單">🧾</a><a href="#visit" title="來店">📍</a></div>
+
+<script>
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{
+document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');
+const f=b.dataset.f;document.querySelectorAll('.menu-card').forEach(c=>{
+if(f==='all'||c.dataset.c===f||c.dataset.c==='all')c.style.display='';else c.style.display='none';});}));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
